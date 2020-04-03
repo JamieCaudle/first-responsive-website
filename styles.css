@@ -1,3 +1,60 @@
 body {
-    background-color: red;
+    margin: 0;
+    height: 100%;}
+
+.first-container {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  background-color: turquoise;
 }
+
+.intro-text {
+  margin: auto;
+  font-size: 80px;
+}
+
+.second-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* display: flex;
+  
+  justify-content: space-evenly; */
+  height: 500px;
+  background-color: black;
+  color: white;
+}
+
+.blue-box {
+  background-color: blue;
+  height: 30pt;
+  width: 150pt;
+  margin: auto;
+}
+
+.orange-box {
+  background-color: orange;
+  height: 30pt;
+  width: 150pt;
+  margin: auto;
+}
+
+.turquoise-box {
+  background-color: turquoise;
+  height: 30pt;
+  width: 150pt;
+  margin: auto;
+}
+
+.text-left, .text-center,.text-right {
+    font-size: 40px;
+    margin: auto;
+    
+  }
+
+  p {
+      text-align: center;
+  }
+  
+  
