@@ -1,10 +1,12 @@
 body {
-    margin: 0;
-    height: 100%;}
+  margin: 0;
+  height: 100%;
+}
+
 
 .first-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns:100% ;
   height: 500px;
   background-color: turquoise;
 }
@@ -12,49 +14,69 @@ body {
 .intro-text {
   margin: auto;
   font-size: 80px;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  
 }
 
 .second-container {
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  /* display: flex;
-  
-  justify-content: space-evenly; */
+  grid-template-rows: repeat(3, 1fr)
+   grid-template-areas: "head" "main"; 
   height: 500px;
   background-color: black;
   color: white;
 }
 
 .blue-box {
-  background-color: blue;
+ 
+  background-color: rgb(79, 182, 245);
   height: 30pt;
   width: 150pt;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
 }
 
 .orange-box {
+;
   background-color: orange;
   height: 30pt;
   width: 150pt;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
 }
 
 .turquoise-box {
+  
   background-color: turquoise;
   height: 30pt;
   width: 150pt;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
 }
 
-.text-left, .text-center,.text-right {
-    font-size: 40px;
-    margin: auto;
-    
-  }
+.text-left,
+.text-center,
+.text-right {
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+}
 
-  p {
-      text-align: center;
-  }
-  
-  
+
+p {
+  text-align: center;
+  max-width: 320px;
+  margin-top: 0;
+  margin-bottom: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
