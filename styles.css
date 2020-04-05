@@ -13,6 +13,7 @@ body {
 
 .intro-text {
   margin: auto;
+  text-align: center;
   font-size: 80px;
   color: white;
   grid-column-start: 1;
@@ -22,17 +23,16 @@ body {
 
 .second-container {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr)
-   grid-template-areas: "head" "main"; 
   height: 500px;
   background-color: black;
   color: white;
 }
 
 .blue-box {
- 
+  grid-column-start: 1 ;
+  grid-row-start:1 ;
   background-color: rgb(79, 182, 245);
   height: 30pt;
   width: 150pt;
@@ -42,7 +42,8 @@ body {
 }
 
 .orange-box {
-;
+grid-column-start: 2 ;
+grid-row-start:1 ;
   background-color: orange;
   height: 30pt;
   width: 150pt;
@@ -51,8 +52,9 @@ body {
   margin-top: 80px;
 }
 
-.turquoise-box {
-  
+.tur-box {
+  grid-column-start: 3 ;
+  grid-row-start:1 ;
   background-color: turquoise;
   height: 30pt;
   width: 150pt;
@@ -61,15 +63,28 @@ body {
   margin-top: 80px;
 }
 
-.text-left,
-.text-center,
-.text-right {
+.text-blue,
+.text-orange,
+.text-tur {
   font-size: 40px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 14px;
 }
 
+.text-blue {
+grid-column-start: 1 ;
+grid-row-start:2 ;
+}
+
+.text-orange {
+grid-column-start: 2 ;
+grid-row-start:2 ;
+}
+.text-tur {
+grid-column-start: 3 ;
+grid-row-start:2 ;
+}
 
 p {
   text-align: center;
@@ -80,3 +95,89 @@ p {
   margin-right: auto;
 }
 
+.blue-text {
+grid-column-start:1;
+grid-row-start:3;
+}
+
+ 
+.orange-text {
+  grid-column-start: 2 ;
+grid-row-start: 3 ;
+}
+
+.tur-text {
+  grid-column-start:3  ;
+grid-row-start:3 ;
+}
+
+
+@media (max-width: 625px) { 
+
+.second-container {
+grid-template-columns: 100%;
+grid-template-rows: repeat(3, 400px);
+background-color: white;
+color: black;
+}
+
+.intro-text {
+  margin: ;
+  text-align: center;
+}
+
+
+.blue-box {
+grid-column-start: 1 ;
+grid-row-start:1 ;
+margin-top: 50px;
+}
+
+.text-blue {
+grid-column-start: 1 ;
+grid-row-start:1 ;
+margin-top: 106px;
+}
+
+.blue-text {
+  grid-column-start: 1 ;
+grid-row-start:1 ;
+margin-top: 160px;
+}
+
+.orange-box {
+grid-column-start: 1 ;
+grid-row-start:2 ;
+margin-top: 50px;
+}
+
+.text-orange {
+  grid-column-start: 1 ;
+grid-row-start:2 ;
+margin-top: 106px;
+}
+
+.orange-text {
+grid-column-start: 1 ;
+grid-row-start:2 ;
+margin-top: 160px;
+}
+
+.tur-box {
+  grid-column-start: 1 ;
+grid-row-start:3 ;
+margin-top: 50px;
+}
+
+.text-tur {
+  grid-column-start: 1 ;
+grid-row-start:3 ;
+margin-top: 106px;
+}
+
+.tur-text {
+grid-column-start: 1 ;
+grid-row-start:3 ;
+margin-top: 160px;
+}
+ }
