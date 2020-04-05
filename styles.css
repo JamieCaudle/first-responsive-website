@@ -114,6 +114,11 @@ grid-row-start:3 ;
 
 @media (max-width: 625px) { 
 
+.first-container {
+  background-color: rgb(0, 209, 213);
+}
+
+
 .second-container {
 grid-template-columns: 100%;
 grid-template-rows: repeat(3, 400px);
